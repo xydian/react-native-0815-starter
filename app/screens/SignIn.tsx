@@ -1,6 +1,6 @@
 import { Button, Icon, IconProps, Input, Layout } from '@ui-kitten/components'
 import React, { ReactElement, useState } from 'react'
-import { TouchableWithoutFeedback, View } from 'react-native'
+import { TouchableWithoutFeedback } from 'react-native'
 
 export function PasswordInput(): ReactElement {
 	const [value, setValue] = React.useState('')
