@@ -3,7 +3,7 @@ import React from 'react'
 import * as eva from '@eva-design/eva'
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components'
 import { EvaIconsPack } from '@ui-kitten/eva-icons'
-import { AppNavigator } from './RootNavigation'
+import { AppNavigator } from './navigation/RootNavigation'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { useThemeStore } from './stores/theme'
 
