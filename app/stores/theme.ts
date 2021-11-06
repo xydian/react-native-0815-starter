@@ -7,6 +7,8 @@ interface ThemeStoreState {
 
 export const useThemeStore = create(
 	combine({ theme: 'light' } as ThemeStoreState, set => ({
-		setFilters: (theme: 'light' | 'dark') => set({ theme }),
+		toggleTheme: () => set(state => ({
+			theme: state.theme === 'light' ? 'dark' : 'light'
+		})),
 	}))
 ) 
