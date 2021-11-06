@@ -1,0 +1,12 @@
+runtime: go115
+service: default
+
+env_variables:
+  DEBUG: ${DEBUG}
+  DBPORT: ${DBPORT}
+  DBUSERNAME: ${DBUSERNAME}
+  DBPASSWORD: ${DBPASSWORD}
+
+handlers:
+  - url: /.*
+    script: auto
