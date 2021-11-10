@@ -26,3 +26,11 @@ You need to configure the following environment variables in github actions in o
 
 ### Github actions
 - Github actions for CI/CD deployment
+
+### Required env variables
+
+Look into server/template.app.yaml to see which environment variables are required for the deployment. Additionally you need to configure the following environment variables: 
+
+- EXPO_TOKEN (obtain on [expo](https://expo.dev)) 
+- GCP_CREDENTIALS (see authorization [over here](https://github.com/google-github-actions/deploy-appengine#authorization))
+- GCP_PROJECT the id of your google cloud platform project
